@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Admin</title>
+<link rel="stylesheet" href="/static/homepage.css">
+<link rel="stylesheet" href="/static/admin_dashboard.css">
+
+
+{% endblock head %}
+
+
+{% block body %}
+
+
+
+<section class="content">
+  <div class="navbar">
+    <ul>
+      <a href="/admin/dashboard/tasks"><li>Task Manager</li></a>
+    </ul>
+  </div>
+      <div class="heading_title">
+
+        <h1>Welcome Admin</h1>
+        <footer>
+          <a href="/logout">Logout</a>
+          <br>
+             <a href="/">Go back to the home page</a>
+      </footer>
+ 
+</section>
+{% endblock body %}

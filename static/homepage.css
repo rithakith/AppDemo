@@ -1,0 +1,48 @@
+
+
+.heading_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    height: 80%;
+ 
+  }
+  
+  #heading_title h1,
+  #heading_title p {
+    margin: 0;
+  }
+  
+  .content {
+    top: 8vh;
+    left: 8vw;
+    right: 8vw;
+    bottom: 8vh;
+    position: fixed;
+    border: 3px solid black;
+  }
+  
+  button {
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 10%;
+    margin: 10px;
+
+  }
+  .button{
+    width: 100%;
+    padding:10px;
+    margin-bottom: 20px;
+  }
+  .input{
+    padding:10px;
+    margin-bottom: 20px;
+  }
+

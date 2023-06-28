@@ -1,0 +1,40 @@
+.navbar ul{
+    list-style-type: none;
+
+   
+}
+.navbar ul a li{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    float: left;
+    
+
+}
+.navbar ul  a li:hover{
+    background-color: white;
+    color:grey;
+    text-decoration: none;
+}
+/* #007BFF */
+.navbar{
+    background-color: grey;
+    height:80px;
+}
+.navbar ul a{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer{
+  
+    position:absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    /* And if you want the div to be full-width: */
+    left: 0;
+    right: 0;
+
+}

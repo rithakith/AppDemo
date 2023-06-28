@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+  <title>User LOGIN</title>
+  <link rel="stylesheet" href="/static/homepage.css" />
+{% endblock %}
+
+{% block body %}
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <p>{{ message }}</p>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+  <section class="content">
+    <div class="heading_title">
+      <form action="" method="post">
+        {{ form.hidden_tag() }}
+        {% if form.username.errors %}
+          <div class="error-message">{{ form.username.errors[0] }}</div>
+        {% endif %}
+
+        <div>{{ form.username(class = 'input') }}</div>
+        <div>{{ form.password(class = 'input') }}</div>
+        <div>{{ form.submit(class = 'button') }}</div>
+      </form>
+
+      <p>
+        Don't have an account? <a href="/user/signup">Sign up</a>
+      </p>
+      <a href="/">Go back to the homepage</a>
+    </div>
+  </section>
+{% endblock %}
